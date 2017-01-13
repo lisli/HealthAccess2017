@@ -4,7 +4,7 @@
  *
  * Sets up the theme and provides some helper functions.
  *
- * @package themeHandle
+ * @package Health_Access2017
  */
 
 
@@ -18,17 +18,17 @@ if ( ! isset( $content_width ) )
 /* THEME SETUP
  ========================== */
  
-if ( ! function_exists( 'themeFunction_setup' ) ):
-function themeFunction_setup() {
+if ( ! function_exists( 'health_access2017_setup' ) ):
+function health_access2017_setup() {
 
 	// Available for translation
-	load_theme_textdomain( 'themeTextDomain', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'health-access2017', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to <head>.
 	add_theme_support( 'automatic-feed-links' );
 
 	// Add custom nav menu support
-	register_nav_menu( 'primary', __( 'Primary Menu', 'themeTextDomain' ) );
+	register_nav_menu( 'primary', __( 'Primary Menu', 'health-access2017' ) );
 	
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
@@ -45,14 +45,14 @@ function themeFunction_setup() {
 	// add_image_size( 'name', 500, 300 );
 }
 endif;
-add_action( 'after_setup_theme', 'themeFunction_setup' );
+add_action( 'after_setup_theme', 'health_access2017_setup' );
 
 
 /* SIDEBARS & WIDGET AREAS
  ========================== */
-function themeFunction_widgets_init() {
+function health_access2017_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'themeTextDomain' ),
+		'name' => __( 'Sidebar', 'health-access2017' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -60,14 +60,14 @@ function themeFunction_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 }
-add_action( 'widgets_init', 'themeFunction_widgets_init' );
+add_action( 'widgets_init', 'health_access2017_widgets_init' );
 
 
 /* ENQUEUE SCRIPTS & STYLES
  ========================== */
-function themeFunction_scripts() {
+function health_access2017_scripts() {
 	// theme style.css file
-	wp_enqueue_style( 'themeTextDomain-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'health-access2017-style', get_stylesheet_uri() );
 	
 	// threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -86,7 +86,7 @@ function themeFunction_scripts() {
 //		array('jquery')
 //	);
 }    
-add_action('wp_enqueue_scripts', 'themeFunction_scripts');
+add_action('wp_enqueue_scripts', 'health_access2017_scripts');
 
 
 /* MISC EXTRAS

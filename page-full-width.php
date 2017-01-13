@@ -2,7 +2,7 @@
 /**
  * Template Name: Full Width Page
  *
- * @package themeHandle
+ * @package Health_Access2017
  */
 
 get_header(); ?>

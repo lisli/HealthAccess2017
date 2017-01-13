@@ -2,7 +2,7 @@
 /**
  * Single post template
  *
- * @package themeHandle
+ * @package Health_Access2017
  */
 
 get_header(); ?>

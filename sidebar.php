@@ -2,7 +2,7 @@
 /**
  * The main sidebar
  *
- * @package themeHandle
+ * @package Health_Access2017
  */
 
 ?>

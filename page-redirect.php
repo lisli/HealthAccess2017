@@ -2,7 +2,7 @@
 /**
  * Template Name: Redirect to First Child
  * 
- * @package themeHandle
+ * @package Health_Access2017
  */
 if ( have_posts() ) : 
 	while ( have_posts() ) : the_post();

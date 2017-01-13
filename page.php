@@ -4,7 +4,7 @@
  *
  * This is the template that displays all pages by default.
  *
- * @package themeHandle
+ * @package Health_Access2017
  */
 
 get_header(); ?>
