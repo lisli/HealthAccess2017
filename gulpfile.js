@@ -15,10 +15,10 @@ gulp.task('styles', function(){
 			console.error('Error!', err.message);
 		})
 		.pipe(gulp.dest(''))
-		// .pipe(autoprefixer())
-		// .pipe(minifycss())
-		// .pipe(gulp.dest(''))
-		// .pipe(livereload());
+		.pipe(autoprefixer())
+		.pipe(minifycss())
+		.pipe(gulp.dest(''))
+		.pipe(livereload());
 });
 
 gulp.task('images', function() {
