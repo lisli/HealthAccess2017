@@ -28,8 +28,14 @@ function health_access2017_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// Add custom nav menu support
-	register_nav_menu( 'primary', __( 'Primary Menu', 'health-access2017' ) );
+	// register_nav_menu( 'primary', __( 'Primary Menu', 'health-access2017' ) );
 	
+	register_nav_menus(
+	    array(
+	      'main-nav' => __( 'Main Menu' ),
+	      'top-nav' => __( 'Top Menu' ) )
+  	);
+  	
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
 	
