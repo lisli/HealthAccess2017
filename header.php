@@ -45,7 +45,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'top-nav' ) ); ?>   
             </nav>     
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
+				<img class="s_span_6" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
 			</a>
 
 			<nav class="access" role="navigation">

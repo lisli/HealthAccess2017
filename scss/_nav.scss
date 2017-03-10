@@ -8,12 +8,19 @@
 	}
 	ul {
 		clear: left;
+		display: flex;
 		padding-left: 0;
 		margin: 0 !important;
 		list-style: none;
 		li {
 			position: relative;
 			display: inline-block;
+			font-size: 1.2em;
+			font-weight: bold;
+			flex: 1;
+			letter-spacing: .5px;
+			text-align: center;
+			text-transform: uppercase;
 			vertical-align: middle;
 			a {
 				display: block;
@@ -35,13 +42,16 @@
 			// 	content: none;
 			// }
 		}
-		
-		
 	}
 
 	.menu-top-menu-container {
 		ul {
+			display: inherit;
 			float: right;
+
+			li {
+				font-size: 1em;
+			}
 		}
 	}
 	

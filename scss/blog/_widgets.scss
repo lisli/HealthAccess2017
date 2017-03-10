@@ -1,18 +1,32 @@
 .widget {
 	clear: both;
-	margin: 0;
+	border-bottom: 3px solid $orange;
+	margin: 0 0 40px 0;
 	padding: 0 0 20px;
 }
 .widget-title {
-	color: $text;
+	background-color: $orange;
+	color: #fff;
+	letter-spacing: .5px;
+	padding: 5px 10px;
 	text-align: left;
+	text-transform: uppercase;
 }
 .widget ul {
-	margin: 0;
+	margin: 1em;
+	list-style-type: none;
 	ul {
-		margin-left: 1.5em;
+		// margin-left: 1.5em;
 	}
 }
+
+.widget_recent_entries {
+	li {
+		margin-bottom: 20px;
+	}
+}
+
+
 
 /* Special Classes */
 .no-border {

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<section id="primary" role="main" class="col pull-left span_8">
+<section id="primary" role="main" class="col pull-left s_span_8">
 
 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -35,13 +35,14 @@ get_header(); ?>
 	?>
 
 	<article class="testimonial">
-		<div class="quote">
-			<?php echo $quote; ?>
-			<?php echo $quoteName; ?>
+		<div class="quote s_span_7">
+			<div class="quote-inner">
+				<?php echo $quote; ?>
+				<?php echo $quoteName; ?>
+			</div>
 		</div>
-		<div class="submit-yours">
-			<?php echo $rightHeader; ?>
-			<?php echo $rightContent; ?>
+		<div class="submit-yours col s_span_5">
+			<h3><?php echo $rightHeader; ?></h3>
 			<?php echo $rightContent; ?>
 			<a href="<?php echo $link; ?>">Submit</a>
 		</div>

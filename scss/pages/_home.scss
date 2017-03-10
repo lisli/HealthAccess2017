@@ -1,0 +1,35 @@
+.home {
+
+	.testimonial {
+		@include clearfix;
+		// position: relative;
+		background-color: $blue;
+		div {
+			@media (min-width: $s) {
+				float: left;
+
+			}
+		}
+
+		.quote {
+			background-color: $blue;
+			color: #fff;
+			// position: absolute;
+	  //       top: 0px;
+	  //       right: 0px;
+	  //       bottom: 0px;
+		}
+
+		.submit-yours {
+			background-color: $tan;
+
+			// @media (min-width: $s) {
+			// 	margin-left: 2%;
+			// }
+
+			h3 {
+				color: $orange;
+			}
+		}
+	}
+}
