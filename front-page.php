@@ -34,7 +34,20 @@ get_header(); ?>
 
 	?>
 
-	
+	<article class="testimonial">
+		<div class="quote">
+			<?php echo $quote; ?>
+			<?php echo $quoteName; ?>
+		</div>
+		<div class="submit-yours">
+			<?php echo $rightHeader; ?>
+			<?php echo $rightContent; ?>
+			<?php echo $rightContent; ?>
+			<a href="<?php echo $link; ?>">Submit</a>
+		</div>
+	</article>
+
+
 
 <?php endwhile; // end of the loop. ?>
 
