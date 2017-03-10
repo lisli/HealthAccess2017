@@ -47,6 +47,7 @@
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
 				<img class="s_span_6" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
 			</a>
+            <?php wp_nav_menu( array( 'theme_location' => 'donate-link' ) ); ?>
 
 			<nav class="access" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>

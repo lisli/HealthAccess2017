@@ -33,7 +33,8 @@ function health_access2017_setup() {
 	register_nav_menus(
 	    array(
 	      'main-nav' => __( 'Main Menu' ),
-	      'top-nav' => __( 'Top Menu' ) )
+	      'top-nav' => __( 'Top Menu' ),
+	      'donate-link' => __( 'Donate Link' ) )
   	);
   	
 	// Add featured image support
