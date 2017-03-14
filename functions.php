@@ -104,8 +104,11 @@ add_action( 'widgets_init', 'health_access2017_widgets_init' );
  ========================== */
 function health_access2017_scripts() {
 	// theme style.css file
-	wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,900', false ); 
+	// wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,900', false ); 
 	wp_enqueue_style( 'health-access2017-style', get_stylesheet_uri() );
+
+	//enqueue additional stylesheet for custom css to be added in addition to theme css
+	wp_enqueue_style( 'additional-styles', get_stylesheet_directory_uri() . '/custom.css' );
 	
 	// threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
