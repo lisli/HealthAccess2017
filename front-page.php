@@ -14,12 +14,14 @@ get_header(); ?>
 
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+		<img src="<?php the_field('background_image'); ?>">
+
 		<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<!-- <h1 class="entry-title"><?php the_title(); ?></h1> -->
 		</header><!-- .entry-header -->
 		
-		<div class="entry-content" style="background-image: url(<?php the_field('background_image'); ?>);">
-			FRONT PAGE TEMPLATE
+		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'health-access2017' ) . '</span>', 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->

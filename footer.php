@@ -13,9 +13,12 @@
 </div><!-- #page -->
 <footer id="footer" role="contentinfo" class="row">
 	<div id="copyright" class="container">
-		&copy; <?php echo date( 'Y' ); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
-		Site by <a href="designerURI" target="_blank" rel="nofollow">themeDesigner</a> &amp;
-		<a href="authorURI" target="_blank" rel="nofollow">themeAuthor</a>
+		<div class="footer-left s_span_6">
+			<?php dynamic_sidebar('footer-left'); ?>
+		</div>
+		<div class="footer-right s_span_6">
+			<?php dynamic_sidebar('footer-right'); ?>
+		<div>
 	</div>
 </footer><!-- #colophon -->
 

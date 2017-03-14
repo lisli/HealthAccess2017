@@ -61,11 +61,14 @@
 	display: inline-block;
 	float: right;
 
+	@media (min-width: $s) {
+		position: relative;
+    	top: 49px;
+	}
+
 	 ul {
 	 	list-style-type: none;
 	 	margin: 0;
-	 	position: relative;
-	    top: 28px;
 
 	    a{
 	    	color: $orange;

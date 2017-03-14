@@ -1,3 +1,17 @@
-#copyright {
-	
+footer {
+	background-color: $blue;
+	color: #fff;
+}
+
+.footer-left {
+	@media (min-width: $s) {
+		float: left;
+	}
+}
+
+.footer-right {
+	@media (min-width: $s) {
+		float: right;
+		text-align: right;
+	}
 }

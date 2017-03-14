@@ -65,6 +65,36 @@ function health_access2017_widgets_init() {
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
+
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Top Bar Search', 'health-access2017' ),
+		'id' => 'top-bar',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '',
+		'after_title' => '',
+		
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer Right', 'health-access2017' ),
+		'id' => 'footer-right',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		
+	) );
+	register_sidebar( array(
+		'name' => __( 'Footer Left', 'health-access2017' ),
+		'id' => 'footer-left',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		
 	) );
 }
 add_action( 'widgets_init', 'health_access2017_widgets_init' );
@@ -74,6 +104,7 @@ add_action( 'widgets_init', 'health_access2017_widgets_init' );
  ========================== */
 function health_access2017_scripts() {
 	// theme style.css file
+	wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,900', false ); 
 	wp_enqueue_style( 'health-access2017-style', get_stylesheet_uri() );
 	
 	// threaded comments
