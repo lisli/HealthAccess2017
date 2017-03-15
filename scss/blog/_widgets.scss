@@ -69,3 +69,29 @@
 		}
 	}
 }
+
+header {
+	.widget_search {
+		width: auto;
+    	float: left;
+    	margin-left: 10px;
+
+    	form {
+    		margin: 0 0 10px;
+    		position: relative;
+    	}
+
+    	input[type=text] {
+    		border: 1px solid $blue;
+    	}
+
+    	input[type=submit] {
+    		background: $blue;
+    		color: white;
+    		position: absolute;
+    		right: 9px;
+		    top: 1px;
+		    padding: 4px 2px 4px 5px;
+    	}
+	}
+}

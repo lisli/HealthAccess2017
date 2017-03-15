@@ -69,8 +69,18 @@ function health_access2017_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Top Bar Search', 'health-access2017' ),
+		'name' => __( 'Top Bar', 'health-access2017' ),
 		'id' => 'top-bar',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '',
+		'after_title' => '',
+		
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Top Nav Search', 'health-access2017' ),
+		'id' => 'top-nav-search',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '',
