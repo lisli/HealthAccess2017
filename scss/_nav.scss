@@ -28,7 +28,7 @@
 				margin: 2px 0;
 				text-decoration: none;
 				cursor: pointer;
-				
+
 				&:hover,
 				&:focus {
 					color: $hover;
@@ -76,6 +76,13 @@
 		}
 	}
 	
+}
+
+#menu-main {
+	.nolink {
+		cursor: default;
+		pointer-events: none;
+	}
 }
 
 .menu-donate-container {
