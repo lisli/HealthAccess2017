@@ -52,3 +52,20 @@
 		display: inline-block;
 	}
 }
+
+.top-bar {
+	@include clearfix;
+	background-color: $blue;
+	.widget_search {
+		// float: right;
+		text-align: right;
+		form {
+			padding: 10px 0;
+			margin: 0;
+		}
+		#s {
+			width: 15%;
+			display: inline-block;
+		}
+	}
+}
