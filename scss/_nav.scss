@@ -2,7 +2,7 @@
 	margin: 0;
 	div {
 		float: left;
-		overflow: hidden;
+		// overflow: hidden;
 		position: relative;
 		width: 100%;
 	}
@@ -28,11 +28,7 @@
 				margin: 2px 0;
 				text-decoration: none;
 				cursor: pointer;
-				// uncomment if you want dividers
-				// &:after {
-				// 	content: '/';
-				// 	color: $text;
-				// }
+				
 				&:hover,
 				&:focus {
 					color: $hover;
@@ -41,6 +37,31 @@
 			// &:last-of-type a:after {
 			// 	content: none;
 			// }
+
+			ul li {
+				display: block;
+			}
+
+			//show first level submenus
+			&:hover > ul {
+				visibility: visible;
+			}
+		}
+
+		ul {
+			background: #fff;
+			display: block;
+			left: 0;
+		    position: absolute;
+		    top: 70px;
+		    visibility: hidden;
+		    z-index: 10;
+
+			ul {
+				visibility: hidden;
+				top: 0;
+    			left: 100%;
+			}
 		}
 	}
 
