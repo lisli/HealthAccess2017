@@ -1,0 +1,145 @@
+#page {width:92%; margin: 16px auto 0;}  
+
+body, input, textarea {font-size:15px}
+
+h1, .entry-title {font-weight:600; color:#18576d; font-size:2.25em}
+
+h2, h3, h5, .entry-title a {font-weight:600;}
+
+h2 {color:#224274; margin-bottom:15px}
+
+h4 {
+    color: #18576d;
+    font-weight: 600;
+    font-size: 1.35em;
+   margin-bottom: 12px;
+    line-height: 25px;
+}
+
+#site-header {margin-bottom:25px}
+
+#site-header, #secondary .widget {
+    border-bottom: 3px solid #f69838;}
+
+/*HEADER*/
+
+.menu-donate-container {top:-50px}
+
+.access ul#menu-top-menu li a {
+    font-weight: 500;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: .9em;
+}
+
+.s_span_6 {width:46%}
+
+
+/*SUBMIT YOUR STORY*/
+
+.home .testimonial .quote-inner {background-image:url(assets/images/haparenthesis.png)}
+
+.home .testimonial .quote-inner {
+    background-repeat: no-repeat;
+    background-position: 20px 26px;
+    background-size: 65px;
+font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1.2em;
+    padding: 45px 45px 10px 100px;
+}
+
+.home .testimonial .submit-yours h3 {font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3.75px;
+    line-height: 28px;
+margin-bottom:10px}
+
+/*MAIN MENU*/
+
+.access ul li a {padding:3px 0 3px 9px}
+
+/*added to _nav.scss*/
+/*.access ul ul {font-size: .75em;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 300px;
+    padding-bottom: 6px;
+    box-shadow: 4px 5px 2px #999;
+    border: thin solid #c3b8af;
+    margin-top: 2px !important;
+    border-left: 14px solid #18576d;
+    border-top: none;
+}*/
+
+/*added to _nav.scss*/
+/*.access ul#menu-main li ul li {text-align: left;
+    text-transform: capitalize;
+    padding-left: 38px;
+ padding-right: 40px;
+    line-height:21px;
+margin-top:6px;
+    margin-bottom:8px
+}*/
+
+.access ul#menu-main li ul li a {text-align: left;     border-bottom: thin solid #cec5bd; padding-bottom:5px}
+
+
+.menu-main-container {
+    margin-top: -40px;
+}
+
+#menu-main li {
+    font-weight: 600;
+    padding: 0px 0px 0px 42px;
+    font-size: 1.15em;
+}
+
+#menu-main li.nolink, #menu-main li.nolink a {padding:0; color:#18576d}
+
+ul.submenu {box-shadow: 10px 10px 5px #cec5bd;}
+
+/*SIDEBAR*/
+
+#black-studio-tinymce-4 h3 {background-image:url(assets/images/health-access-takeaction.png); background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;}
+
+#secondary .widget-title {  text-transform: capitalize;
+    font-weight: 600;}
+
+#black-studio-tinymce-4 a {font-size:12px; letter-spacing:1px; margin-top: -16px;
+    display: block;}
+
+#secondary .widget-title {padding:5px 15px}
+
+#secondary  #black-studio-tinymce-4 .widget-title {font-size:24px; padding: 5px 310px 5px 15px;
+    text-align: left;
+    line-height: 28px;}
+
+#secondary .widget_recent_entries li {margin-bottom: 22px;
+    line-height: 24px;}
+
+span.post-date, .submit-yours a {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 3px;
+letter-spacing:1px
+}
+
+/*Posts*/
+
+.entry-date {
+    color: #000;
+    font-size: 1em;
+    padding-bottom: 18px;
+}
+
+
+/*FOOTER*/
+
+#footer {background-color:#1a3362; border-top:4px solid #ef602f}
+
+.footer-right img {max-width:400px}
+

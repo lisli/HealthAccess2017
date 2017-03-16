@@ -12,6 +12,7 @@
 		position: relative;
 		width: auto;
 	}
+	//first level nav
 	ul {
 		clear: left;
 		// display: flex;
@@ -40,10 +41,8 @@
 					color: $hover;
 				}
 			}
-			// &:last-of-type a:after {
-			// 	content: none;
-			// }
 
+			//second level nav
 			ul li {
 				display: block;
 				padding: 3px 25px;
@@ -55,11 +54,16 @@
 			}
 
 			//show first level submenus
-			&:hover > ul {
+			&:hover ul {
+				visibility: visible;
+			}
+
+			&:hover ul ul {
 				visibility: visible;
 			}
 		}
 
+		//second level nav
 		ul {
 			background: #fff;
 			display: block;
@@ -68,19 +72,32 @@
 		    top: 100%;
 		    visibility: hidden;
 		    z-index: 10;
+		    font-size: .75em;
+		    font-weight: 600;
+		    text-transform: capitalize;
+		    width: 300px;
+		    padding-bottom: 6px;
+		    box-shadow: 4px 5px 2px #999;
+		    border: thin solid #c3b8af;
+		    margin-top: 2px !important;
+		    border-left: 14px solid #18576d;
+		    border-top: none;
 
 		    li {
 		    	font-size: 1em;
 		    }
 
+		    //third level nav
 			ul {
-				visibility: hidden;
-				top: 0;
-    			left: 100%;
+				// visibility: visible;
+				position: static;
+				box-shadow: none;
+			    width: 247px;
+			    border: none;
 
-    			// li {
-    			// 	font-size: .8em;
-    			// }
+				li {
+					margin-top: 14px;
+				}
 			}
 		}
 	}
@@ -107,6 +124,21 @@
 			cursor: default;
 			pointer-events: none;
 		}
+	}
+
+	// from samantha's custom.css
+	li ul li {
+		text-align: left;
+	    text-transform: capitalize;
+	    padding-left: 38px;
+	    padding-right: 40px;
+	    line-height: 21px;
+	    margin-top: 6px;
+	    margin-bottom: 8px;
+
+	    ul li {
+	    	margin-top: 14px;
+	    }
 	}
 }
 
