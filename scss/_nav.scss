@@ -1,7 +1,10 @@
 .access {
 	@include clearfix;
-	float: right;
 	margin: 10px 0 0;
+
+	&.top-nav-bar {
+		float: right;
+	}
 
 	div {
 		float: left;

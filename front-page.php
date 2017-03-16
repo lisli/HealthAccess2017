@@ -46,7 +46,7 @@ get_header(); ?>
 		<div class="submit-yours col s_span_5">
 			<h3><?php echo $rightHeader; ?></h3>
 			<?php echo $rightContent; ?>
-			<a href="<?php echo $link; ?>">Submit</a>
+			<a href="<?php echo $link; ?>">Submit Your Story</a>
 		</div>
 	</article>
 

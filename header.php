@@ -45,7 +45,7 @@
     </div>
 	<div id="page">
 		<header id="site-header" role="banner" class="row"> 
-            <nav class="access">   
+            <nav class="access top-nav-bar">   
                 <?php wp_nav_menu( array( 'theme_location' => 'top-nav' ) ); ?>
                 <?php dynamic_sidebar('top-nav-search'); ?>   
             </nav>     

@@ -55,7 +55,7 @@
 
 .top-bar {
 	@include clearfix;
-	background-color: $blue;
+	// background-color: $blue;
 	.widget_search {
 		// float: right;
 		text-align: right;
@@ -85,13 +85,13 @@ header {
     		border: 1px solid $blue;
     	}
 
-    	input[type=submit] {
+    	button[type=submit] {
     		background: $blue;
     		color: white;
     		position: absolute;
     		right: 9px;
 		    top: 1px;
-		    padding: 4px 2px 4px 5px;
+    		padding: 6px 5px 8px 5px;
     	}
 	}
 }
