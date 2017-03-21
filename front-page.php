@@ -15,7 +15,12 @@ get_header(); ?>
 
 	<article id="post-<?php the_ID(); ?>">
 
-		<img src="<?php the_field('background_image'); ?>">
+		<!-- <img src="<?php the_field('background_image'); ?>"> -->
+
+		<div class="entry-content">
+			<?php the_content(); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'health-access2017' ) . '</span>', 'after' => '</div>' ) ); ?>
+		</div><!-- .entry-content -->
 		
 	</article><!-- #post-<?php the_ID(); ?> -->
 
