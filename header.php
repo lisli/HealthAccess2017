@@ -40,8 +40,9 @@
  
 <body <?php body_class(); ?>>
     <div class="top-bar">
-        <?php //dynamic_sidebar('top-bar'); ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-bar.jpg"/>
+        <div class="container">
+            <?php dynamic_sidebar('top-bar'); ?>
+        </div>
     </div>
 	<div id="page">
 		<header id="site-header" role="banner" class="row"> 

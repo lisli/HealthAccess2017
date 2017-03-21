@@ -1,5 +1,22 @@
 .top-bar {
-	// background-color: $blue;
+	background-color: $darkBlue;
+	padding: 10px 10px 8px;;
+
+	.textwidget {
+		text-align: right;
+
+		a {
+			color: #fff;
+		}
+
+		.fa {
+			font-size: 1.3em;
+
+			&:first-of-type {
+				margin-right: 10px;
+			}
+		}
+	}
 }
 
 #site-header {
