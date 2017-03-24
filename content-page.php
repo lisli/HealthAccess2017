@@ -8,9 +8,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title s_span_8"><?php the_title(); ?></h1>
+		<img class="s_span_4 col" src="<?php echo get_template_directory_uri(); ?>/assets/images/HA-page-header-img.jpg" alt="">
 	</header><!-- .entry-header -->
-
+<div>content-page.php</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'health-access2017' ) . '</span>', 'after' => '</div>' ) ); ?>

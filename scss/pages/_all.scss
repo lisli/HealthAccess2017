@@ -6,3 +6,12 @@
 		margin-right: 6px;
 	}
 }
+
+.page-template-default {
+	.entry-title {
+		background: $teal;
+		color: #fff;
+		float: left;
+		padding: 24px;
+	}
+}
