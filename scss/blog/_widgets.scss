@@ -1,12 +1,25 @@
 #secondary {
 	.widget {
+		@include clearfix;
 		clear: both;
 		border-bottom: 3px solid $orange;
 		margin: 0 0 40px 0;
-		padding: 0 0 20px;
+		// padding: 0 0 20px;
 
 		.textwidget {
 			margin: 1em;
+		}
+
+		.widget-cta {
+			float: right;
+			background-color: $lightOrange;
+			letter-spacing: .5px;
+			padding: 10px;
+			text-transform: uppercase;
+
+			a {
+				color: #fff;
+			}
 		}
 	}
 	.widget-title {
