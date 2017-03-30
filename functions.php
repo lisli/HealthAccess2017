@@ -62,7 +62,7 @@ function health_access2017_widgets_init() {
 		'name' => __( 'Sidebar Top', 'health-access2017' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '<span class="widget-cta"><a href="<a href="http://healthaccess.flywheelsites.com/get-involved/">View More Ways to Get Involved >></a></span></aside>',
+		'after_widget' => '<span class="widget-cta"><a href="http://healthaccess.flywheelsites.com/get-involved/">View More Ways to Get Involved >></a></span></aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 
