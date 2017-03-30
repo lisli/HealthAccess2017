@@ -59,8 +59,26 @@ add_action( 'after_setup_theme', 'health_access2017_setup' );
  ========================== */
 function health_access2017_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'health-access2017' ),
+		'name' => __( 'Sidebar Top', 'health-access2017' ),
 		'id' => 'sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '<span class="widget-cta">View More Ways to Get Involved >></span></aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+
+	) );
+	register_sidebar( array(
+		'name' => __( 'Sidebar Middle', 'health-access2017' ),
+		'id' => 'sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '<span class="widget-cta">More on the Blog>></span></aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+
+	) );
+	register_sidebar( array(
+		'name' => __( 'Sidebar Bottom', 'health-access2017' ),
+		'id' => 'sidebar-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
