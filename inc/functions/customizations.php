@@ -48,4 +48,26 @@ function excerpt_read_more( $more ) {
 	    return ' [...] <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'health-access2017') . '</a>';
 	}
 add_filter( 'excerpt_more', 'excerpt_read_more' );
+
+
+//Breadcrumbs
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        the_category(' &bull; ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}
 ?>

@@ -9,6 +9,7 @@
  */
 
 get_header(); ?>
+<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
 
 <section id="primary" role="main" class="col pull-left s_span_8">
 

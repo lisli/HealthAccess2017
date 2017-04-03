@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
 <section id="primary" class="col pull-left s_span_8">
 
 	<?php while ( have_posts() ) : the_post(); ?>
