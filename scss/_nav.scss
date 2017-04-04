@@ -54,13 +54,13 @@
 			}
 
 			//show first level submenus
-			&:hover ul {
+			&:hover > ul {
 				visibility: visible;
 			}
 
-			&:hover ul ul {
-				visibility: visible;
-			}
+			// &:hover ul ul {
+			// 	visibility: hidden;
+			// }
 		}
 
 		//second level nav
@@ -90,9 +90,12 @@
 		    //third level nav
 			ul {
 				// visibility: visible;
-				position: static;
+				// position: static;
+				position: absolute;
+				top: 0px;
+				left: 100%;
 				box-shadow: none;
-			    width: 247px;
+			    // width: 247px;
 			    border: none;
 
 				li {
