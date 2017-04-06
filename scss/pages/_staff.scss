@@ -1,0 +1,25 @@
+.page-template-page-staff {
+	.staff {
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.staff-member {
+		@include clearfix;
+		border-bottom: 3px solid $blue;
+		list-style-type: none;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+
+		img {
+			float: left;
+		}
+
+		.staff-info {
+			float: left;
+			margin-left: 20px;
+		}
+	}
+}
