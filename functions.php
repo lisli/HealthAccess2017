@@ -134,7 +134,7 @@ add_action( 'init', 'create_publication_tax' );
 
 function create_publication_tax() {
 	register_taxonomy(
-		'publication category',
+		'publication-category',
 		'publication',
 		array(
 			'label' => __( 'Publication Categories' ),
@@ -155,7 +155,7 @@ function create_publication_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'taxonomies' => array( 'publication category' ),
+		'taxonomies' => array( 'publication-category' ),
 
 		)
 	);
