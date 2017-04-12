@@ -127,6 +127,61 @@ function health_access2017_widgets_init() {
 }
 add_action( 'widgets_init', 'health_access2017_widgets_init' );
 
+/* CUSTOM POST TYPES & TAXONOMIES
+ ========================== */
+
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_publicationcategories_hierarchical_taxonomy', 0 );
+
+//create a custom taxonomy name it topics for your posts
+
+function create_topics_hierarchical_taxonomy() {
+
+// Add new taxonomy, make it hierarchical like categories
+//first do the translations part for GUI
+
+  $labels = array(
+    'name' => _x( 'Publication Categories', 'taxonomy general name' ),
+    'singular_name' => _x( 'Publication Category', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Publication Categories' ),
+    'all_items' => __( 'All Publication Categories' ),
+    'parent_item' => __( 'Parent Publication Category' ),
+    'parent_item_colon' => __( 'Parent Publication Category:' ),
+    'edit_item' => __( 'Edit Publication Category' ), 
+    'update_item' => __( 'Update Publication Category' ),
+    'add_new_item' => __( 'Add New Publication Category' ),
+    'new_item_name' => __( 'New Publication Category Name' ),
+    'menu_name' => __( 'Publication Categories' ),
+  ); 	
+
+// Now register the taxonomy
+
+  register_taxonomy('publication categories',array('post'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'publication-category' ),
+  ));
+
+}
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'publications',
+		array(
+			'labels' => array(
+				'name' => __( 'Publications' ),
+				'singular_name' => __( 'Publication' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'taxonomies' => array( 'publication category' ),
+
+		)
+	);
+}
 
 /* ENQUEUE SCRIPTS & STYLES
  ========================== */
