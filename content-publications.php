@@ -24,6 +24,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
+
+		<ul class="publication-categories"><?php echo get_the_term_list( $post->ID, 'publication-category', '<li>', ', ', '</li>' ) ?></ul>
 		
 		<?php the_tags( '<div class="post-tags">' . __( 'Tagged: ', 'health-access2017' ) , ', ', '</div>' ); ?>
 		
