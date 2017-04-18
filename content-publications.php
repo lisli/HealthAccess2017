@@ -23,7 +23,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'health-access2017' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-meta">
+	<footer class="publication-entry-meta">
 
 		<ul class="publication-categories"><?php echo get_the_term_list( $post->ID, 'publication-category', '<li>', ', ', '</li>' ) ?></ul>
 		
