@@ -35,7 +35,9 @@ get_header(); ?>
 					<p><?php echo $title; ?></p>
 					<p><?php echo $phone; ?></p>
 					<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
-				    <p><?php echo $bio; ?></p>
+					<button>Read Bio</button>
+				    <p class="bio"><?php echo $bio; ?></p>
+
 				</div>
 			</li>
 
