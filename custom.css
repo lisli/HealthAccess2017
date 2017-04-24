@@ -23,6 +23,10 @@ h4 {
 
 /*HEADER*/
 
+.menu-top-menu-container {
+    min-width: 500px;
+}
+
 .menu-donate-container {top:-50px}
 
 .access ul#menu-top-menu li a {
@@ -143,3 +147,238 @@ letter-spacing:1px
 
 .footer-right img {max-width:400px}
 
+
+/**/
+  
+.featured-items img {float:left; margin-right:15px}  
+
+.featured-items .s_span_5 {width:18.5%} 
+
+/*Testing*/
+
+.home .featured-items article {
+    border-top: none;
+    margin-bottom: 10px;
+}
+
+.home article {
+    margin-bottom: 16px;
+}
+
+.su-column-size-1-3 {
+    width: 30.66%;
+    height: 100px;
+}
+
+li#menu-item-18010, li#menu-item-18011, li#menu-item-18021, li#menu-item-18022, li#menu-item-18024, li#menu-item-18015 {
+    border-left: 4px solid #efefef;
+    padding-left: 22px;
+}
+
+.publications-search {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #18576d;
+}
+
+button a {color:#fff}
+
+
+#wpsocial-user-sharing-message {
+    font-family: inherit;
+    font-size: 18px;}
+
+/*I cut and pasted this out of header.php*/
+
+#site-header img {width:51%}
+
+.featured-items .s_span_5 {width:18.5%} 
+
+.featured-items {margin-top:0px}
+
+.featured-items .featwrap {margin-bottom:15px; border-bottom: #e8e2d9 2px solid; padding:5px 0 10px}
+
+.featwrap p {margin-bottom:1em}
+
+.featwrap a.read-more {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.featwrap h3 {font-size:24px; margin-top:-6px}
+
+
+header .widget_search {float:right; margin-right:-120px}
+
+#menu-main li {
+    padding: 0px 7px 0px 7px;
+}
+
+
+.mainnavwrap, header .widget_search {margin-top:0px}
+
+.access ul li a {
+    padding: 5px;}
+
+.menu-main-container{
+    background:#f3f2f0;
+    margin-top: -5px;
+}
+
+.access ul ul {border-left: thin solid #c3b8af;}
+
+ #menu-main li ul li {padding-left: 14px;
+    padding-right: 10px;}
+
+.access ul ul {
+    border-left: thin solid #e8e2d9;
+    margin-top: 0px!important;
+    border: thin solid #e8e2d9;
+}
+
+#recent-posts-3, #twitter-timeline-profile-2 {display:none}
+
+.home #recent-posts-3, .home #twitter-timeline-profile-2 {display:block}
+
+#advanced_sidebar_menu-2 .widget-cta {display:none}
+
+.page-template-default h1 {background:#18576d; color:#fff; padding:20px; line-height: 37px;}
+
+.page-template-default h1 {
+    background: #18576d;
+    color: #fff;
+    padding: 20px;
+    float: left;
+    min-height: 114px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+#secondary.s_span_4 {
+    margin-left:4%;
+    width: 30%;
+    margin-top:10px
+}
+
+.entry-meta {
+   display:none
+}
+ 
+.breadcrumb {
+    margin-bottom: 15px;
+}
+
+#footer {border-top: 3px solid #f69838;}
+
+ul.parent-sidebar-menu li a {font-size:24px; color:#18576d; padding-left:14px; text-transform:Capitalize; font-weight:600 }
+
+ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; font-weight:normal; padding-left:0; text-transform:none;}
+ ul.parent-sidebar-menu {background-color:#f3f2f0} 
+
+#secondary .widget ul li li {
+    padding: 6px 4px;
+    border-bottom: thin solid #e8e2d9;
+}
+
+#secondary .widget ul {margin:0; padding:15px}
+
+.home .entry-content {padding-top:10px}
+
+.home .featured-items .text h3 {margin-top:0}
+
+.su-column {margin-right:2%!important}
+
+.access ul ul {width:270px}
+
+.access ul li ul li.menu-item-has-children a::after {content: " >>"}
+
+.access ul li ul li ul {box-shadow: 4px 5px 2px #999; margin-top:-18px!important; margin-left:-20px!important; border: thin solid #e8e2d9;}
+
+.access ul li ul li.menu-item-has-children li a::after {display:none}
+
+.access ul li#menu-item-5059 ul li ul {margin-left:-60px!important}
+
+
+.access .menu-top-menu-container ul li ul li {
+    text-align: left;
+    text-transform: capitalize;
+    padding: 10px 10px 0;
+    font-size: 14px;
+}
+
+.access .menu-top-menu-container ul li ul li ul {margin-left:-45px !important; margin-top:0!important; width:200px}
+
+.access .menu-top-menu-container ul li ul li ul li {
+    padding: 0;
+}
+
+#secondary  #black-studio-tinymce-4 .widget-title {background-image:url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/04/health-access-takeaction-1.png);}
+
+h4 {
+    color: #071a3e;
+    font-weight: 600;
+    margin-bottom:3px; font-size:1.25em
+}
+
+.su-column-inner.su-clearfix {
+    height: 130px;
+}
+
+h2 {
+    color: #ef6030;
+    margin-bottom: 15px;
+}
+
+.widget_popular_post_widget li {
+    list-style: none;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+#secondary .widget .widget-cta {display:none}
+
+.home #secondary .widget .widget-cta {display:block}
+
+.s_span_6 {width:45%}
+
+#footer .footer-left.s_span_6 {
+    width: 55%; 
+}
+
+#footer .s_span_6 strong {color:#f69838}
+
+.home .featured-items .text h3 {margin-bottom:.5em}
+
+
+.page-template-default .entry-title {padding:18px 24px}
+
+.blog img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.blog .entry-title {font-size: 1.75em;}
+
+.single-post img[class*=attachment-] {float:left; margin-right:20px; max-width:300px; height:auto}
+
+.has-post-thumbnail {
+    min-height: 280px;
+}
+
+.featwrap p {
+    margin-bottom: .5em;
+}
+
+.home .featured-items .read-more {
+    font-size: .75em;}
+
+.page-template-page-staff .staff-member .staff-info {
+    width: 80%;
+}
+
+.page-template-page-staff .staff-member {margin-top:20px}
