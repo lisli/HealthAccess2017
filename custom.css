@@ -191,7 +191,13 @@ button a {color:#fff}
     font-family: inherit;
     font-size: 18px;}
 
-/*I cut and pasted this out of header.php*/
+#black-studio-tinymce-5 p {margin-bottom:0}
+
+#black-studio-tinymce-5 p a.email {font-weight:bold; color:#f99928; margin-right:15px}
+
+.top-bar a:hover {opacity:.8}
+
+/*Cut and pasted from header.php*/
 
 #site-header img {width:51%}
 
