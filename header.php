@@ -48,16 +48,17 @@
 		<header id="site-header" role="banner" class="row"> 
             <nav class="access top-nav-bar">   
                 <?php wp_nav_menu( array( 'theme_location' => 'top-nav' ) ); ?>
-                <?php dynamic_sidebar('top-nav-search'); ?>   
             </nav>     
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
 				<img class="s_span_6" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
 			</a>
             <?php wp_nav_menu( array( 'theme_location' => 'donate-link' ) ); ?>
 
-			<nav class="access" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
-			</nav><!-- #access -->  
+			<div class="mainnavwrap">
+                <nav class="access" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?><?php dynamic_sidebar('top-nav-search'); ?>   
+                </nav>
+            </div><!-- #access -->
 		</header><!-- #branding -->
 
 
