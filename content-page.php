@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title s_span_8"><?php the_title(); ?></h1>
-		<img class="s_span_4 col" src="<?php echo get_template_directory_uri(); ?>/assets/images/HA-page-header-img.jpg" alt="">
+		<?php dynamic_sidebar('page-header-image'); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>

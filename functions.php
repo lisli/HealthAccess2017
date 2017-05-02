@@ -124,6 +124,14 @@ function health_access2017_widgets_init() {
 		'after_title' => '</h3>',
 		
 	) );
+
+	register_sidebar( array(
+		'name' => __( 'Page Header Image', 'health-access2017' ),
+		'id' => 'page-header-image',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s s_span_4 col">',
+		'after_widget' => "</aside>",
+		
+	) );
 }
 add_action( 'widgets_init', 'health_access2017_widgets_init' );
 

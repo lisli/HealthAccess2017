@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<?php mj_wp_breadcrumb( 'ul', 'breadcrumb', 'breadcrumbs', 'current', true ); ?>>
+<?php mj_wp_breadcrumb( 'ul', 'breadcrumb', 'breadcrumbs', 'current', true ); ?>
 
 <section id="primary" role="main" class="col pull-left s_span_8">
 
