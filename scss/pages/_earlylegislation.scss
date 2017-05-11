@@ -1,7 +1,23 @@
 .page-template-page-early-legislation {
+	.legislation-list {
+		list-style-type: none;
+		margin-left: 0;
+	}
+
 	.early-legislation-header {
 		cursor: pointer;
+	    border: 1px solid #ddd;
+	    background: #F5F5F5;
+	    background: -moz-linear-gradient(top, #FAFAFA 0%, #F5F5F5 100%);
+	    background: -webkit-linear-gradient(top, #FAFAFA 0%, #F5F5F5 100%);
+	    background: -o-linear-gradient(top, #FAFAFA 0%, #F5F5F5 100%);
+	    background: linear-gradient(to bottom, #FAFAFA 0%, #F5F5F5 100%);
+	    border-radius: 5px;
+	    box-shadow: 0 1px 0 #fff inset;
+	    text-shadow: 0 1px 0 #fff;
+	    padding: 10px;
 	}
+
 	.early-legislation-content {
 		display: none;
 	}

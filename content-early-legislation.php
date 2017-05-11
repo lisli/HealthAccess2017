@@ -13,7 +13,7 @@
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php if( have_rows('legislation_by_year') ): ?>
-		<ul>
+		<ul class="legislation-list">
 		    <?php while ( have_rows('legislation_by_year') ) : the_row();
 				$header = get_sub_field('early_legislation_header');
 				$content = get_sub_field('early_legislation_content');
