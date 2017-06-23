@@ -1,4 +1,10 @@
 #secondary {
+	@media (min-width: $m) {
+		margin-left:4%;
+	    width: 30%;
+	    margin-top:10px
+	}
+
 	.widget {
 		@include clearfix;
 		clear: both;
@@ -88,7 +94,7 @@
 header {
 	.widget_search {
 		width: auto;
-    	float: left;
+    	float: right;
     	margin-left: 10px;
 
     	form {
@@ -104,9 +110,21 @@ header {
     		background: $blue;
     		color: white;
     		position: absolute;
-    		right: 9px;
+    		right: 0;
 		    top: 1px;
     		padding: 6px 7px 9px 7px;;
     	}
+
+    	#s {
+    		width: 100%;
+    	}
 	}
 }
+
+.page .widget_sp_image {
+	display: none;
+	@media (min-width: $m) {
+		display: block;
+	}
+}
+

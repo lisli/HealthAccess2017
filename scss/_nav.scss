@@ -4,6 +4,10 @@
 
 	&.top-nav-bar {
 		float: right;
+		width: 100%;
+		.menu-top-menu-container {
+			float: none;
+		}
 	}
 
 	div {
@@ -65,47 +69,53 @@
 
 		//second level nav
 		ul {
-			background: #fff;
-			display: block;
-			left: 0;
-		    position: absolute;
-		    top: 100%;
-		    visibility: hidden;
-		    z-index: 10;
-		    font-size: .75em;
-		    font-weight: 600;
-		    text-transform: capitalize;
-		    width: 300px;
-		    padding-bottom: 6px;
-		    box-shadow: 4px 5px 2px #999;
-		    border: thin solid #c3b8af;
-		    margin-top: 2px !important;
-		    border-left: 14px solid #18576d;
-		    border-top: none;
+			@media (min-width: $s){
+				background: #fff;
+				display: block;
+				left: 0;
+			    position: absolute;
+			    top: 100%;
+			    visibility: hidden;
+			    z-index: 10;
+			    font-size: .75em;
+			    font-weight: 600;
+			    text-transform: capitalize;
+			    width: 300px;
+			    padding-bottom: 6px;
+			    box-shadow: 4px 5px 2px #999;
+			    border: thin solid #c3b8af;
+			    margin-top: 2px !important;
+			    border-left: 14px solid #18576d;
+			    border-top: none;
 
-		    li {
-		    	font-size: 1em;
-		    }
+			    li {
+			    	font-size: 1em;
+			    }
 
-		    //third level nav
-			ul {
-				// visibility: visible;
-				// position: static;
-				position: absolute;
-				top: 0px;
-				left: 100%;
-				box-shadow: none;
-			    // width: 247px;
-			    border: none;
+			    //third level nav
+				ul {
+					// visibility: visible;
+					// position: static;
+					position: absolute;
+					top: 0px;
+					left: 100%;
+					box-shadow: none;
+				    // width: 247px;
+				    border: none;
 
-				li {
-					margin-top: 14px;
+					li {
+						margin-top: 14px;
+					}
 				}
 			}
 		}
 	}
 
 	.menu-top-menu-container {
+		@media (min-width: $m) {
+			min-width: 520px;
+		}
+		
 		ul {
 			display: inherit;
 			float: right;
@@ -119,16 +129,6 @@
 }
 
 #menu-main {
-	.nolink {
-		display: none; 
-
-		@media (min-width: $s) {
-			display: inline-block;
-			cursor: default;
-			pointer-events: none;
-		}
-	}
-
 	// from samantha's custom.css
 	li ul li {
 		text-align: left;
@@ -149,9 +149,9 @@
 	display: inline-block;
 	float: right;
 
-	@media (min-width: $s) {
+	@media (min-width: $l) {
 		position: relative;
-    	top: 49px;
+    	top: 70px;
 	}
 
 	 ul {

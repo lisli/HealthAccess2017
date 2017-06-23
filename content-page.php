@@ -8,7 +8,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title s_span_8"><?php the_title(); ?></h1>
+		<h1 class="entry-title s_span_12 m_span_8"><?php the_title(); ?></h1>
 		<?php dynamic_sidebar('page-header-image'); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">

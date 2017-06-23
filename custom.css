@@ -1,6 +1,18 @@
-#page {width:92%; margin: 16px auto 0;}  
+/*moved to _layout.scss*/
+/*#page {width:92%; margin: 16px auto 0;}  */
 
 body, input, textarea {font-size:15px}
+
+div#main p, div#main li {
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+div#main #primary li {list-style-type:disc}
+
+.home .featured-items .text {
+    font-size:1em;
+    width: 75%;
+}
 
 h1, .entry-title {font-weight:600; color:#18576d; font-size:2.25em}
 
@@ -18,16 +30,20 @@ h4 {
 
 #site-header {margin-bottom:25px}
 
-#site-header, #secondary .widget {
+#site-header {
     border-bottom: 3px solid #f69838;}
+
+#secondary .widget {margin-bottom:20px; border-bottom:none}
 
 /*HEADER*/
 
-.menu-top-menu-container {
-    min-width: 500px;
-}
+/*moved to _nav.scss*/
+/*.menu-top-menu-container {
+    min-width: 520px;
+}*/
 
-.menu-donate-container {top:-50px}
+/*moved to _nav.scss*/
+/*.menu-donate-container {top:-50px}*/
 
 .access ul#menu-top-menu li a {
     font-weight: 500;
@@ -36,7 +52,12 @@ h4 {
     font-size: .9em;
 }
 
-.s_span_6 {width:46%}
+aside#search-2 {
+    margin-top: -4px;
+}
+
+/*this is a global column width, have to comment it out & use more specific selectors*/
+/*.s_span_6 {width:46%}*/
 
 
 /*SUBMIT YOUR STORY*/
@@ -105,26 +126,35 @@ ul.submenu {box-shadow: 10px 10px 5px #cec5bd;}
 
 /*SIDEBAR*/
 
-#black-studio-tinymce-4 h3 {background-image:url(assets/images/health-access-takeaction.png); background-size: contain;
+#black-studio-tinymce-4 h3 {background-image:url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-newtakeaction.png); background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;}
+    background-position: left;}
+
+#recent-posts-3 h3 {background-image:url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-newblog.png); background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;}
+
+#twitter-timeline-profile-2 h3 {background-image:url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-newtwitter.png); background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;}
+
 
 #secondary .widget-title {  text-transform: capitalize;
-    font-weight: 600;}
+    font-weight: 600; padding:15px 5px 15px 85px; background-color: #003466; color:#fff}
 
-#black-studio-tinymce-4 a {font-size:12px; letter-spacing:1px; margin-top: -16px;
-    display: block;}
+#black-studio-tinymce-4 a {font-size:.9em; letter-spacing:.5px; margin-top: -10px;
+    display: block; font-weight:600}
 
-#secondary .widget-title {padding:5px 15px}
 
-#secondary  #black-studio-tinymce-4 .widget-title {font-size:24px; padding: 5px 310px 5px 15px;
+
+#secondary  #black-studio-tinymce-4 .widget-title {
     text-align: left;
     line-height: 28px;}
 
 #secondary .widget_recent_entries li {margin-bottom: 22px;
     line-height: 24px;}
 
-span.post-date, .submit-yours a {
+span.post-date, .submit-yours a, .entry-date {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
@@ -191,15 +221,15 @@ button a {color:#fff}
     font-family: inherit;
     font-size: 18px;}
 
-#black-studio-tinymce-5 p {margin-bottom:0}
+.top-bar .widget .textwidget p {margin-bottom:0}
 
-#black-studio-tinymce-5 p a.email {font-weight:bold; color:#f99928; margin-right:15px}
+.top-bar .widget .textwidget p a.email {font-weight:bold; color:#f99928; margin-right:15px}
 
-.top-bar a:hover {opacity:.8}
+.top-bar a:hover, a img:hover, fa:hover {opacity:.8}
 
 /*Cut and pasted from header.php*/
 
-#site-header img {width:51%}
+/*#site-header img {width:51%}*/
 
 .featured-items .s_span_5 {width:18.5%} 
 
@@ -209,6 +239,7 @@ button a {color:#fff}
 
 .featwrap p {margin-bottom:1em}
 
+
 .featwrap a.read-more {
     display: block;
     margin-bottom: 10px;
@@ -217,17 +248,17 @@ button a {color:#fff}
 .featwrap h3 {font-size:24px; margin-top:-6px}
 
 
-header .widget_search {float:right; margin-right:-120px}
+/*header .widget_search {float:right; margin-right:-130px}*/
 
 #menu-main li {
     padding: 0px 7px 0px 7px;
 }
 
 
-.mainnavwrap, header .widget_search {margin-top:0px}
+/*.mainnavwrap, header .widget_search {margin-top:-10px}*/
 
 .access ul li a {
-    padding: 5px;}
+    padding: 2px;}
 
 .menu-main-container{
     background:#f3f2f0;
@@ -263,18 +294,19 @@ header .widget_search {float:right; margin-right:-120px}
     margin-bottom: 20px;
 }
 
-#secondary.s_span_4 {
+/*moved to _widgets.scss*/
+/*#secondary.s_span_4 {
     margin-left:4%;
     width: 30%;
     margin-top:10px
-}
+}*/
 
 .entry-meta {
    display:none
 }
  
-.breadcrumb {
-    margin-bottom: 15px;
+#breadcrumb {
+    display:none
 }
 
 #footer {border-top: 3px solid #f69838;}
@@ -293,6 +325,27 @@ ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; font-weight:norm
 
 .home .entry-content {padding-top:10px}
 
+.entry-content {margin-top:10px}
+
+p.large, h3 {
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif!important;
+    color: #224176;
+}
+
+aside#black-studio-tinymce-2 h3 {
+    color: #fff;
+}
+
+h2.factsheet {background-image: url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-factsheet.png);
+    height: 66px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 85px;
+    margin-bottom: 25px;
+    line-height: 28px;
+    padding-top: 6px;} 
+
 .home .featured-items .text h3 {margin-top:0}
 
 .su-column {margin-right:2%!important}
@@ -304,6 +357,13 @@ ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; font-weight:norm
 .access ul li ul li ul {box-shadow: 4px 5px 2px #999; margin-top:-18px!important; margin-left:-20px!important; border: thin solid #e8e2d9;}
 
 .access ul li ul li.menu-item-has-children li a::after {display:none}
+
+.page-template-page-staff li {
+    list-style-type: none!important;
+}
+
+.page-template-page-staff .staff-member {
+    border-bottom: 2px solid #e8e2d9;}
 
 .access ul li#menu-item-5059 ul li ul {margin-left:-60px!important}
 
@@ -321,7 +381,7 @@ ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; font-weight:norm
     padding: 0;
 }
 
-#secondary  #black-studio-tinymce-4 .widget-title {background-image:url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/04/health-access-takeaction-1.png);}
+
 
 h4 {
     color: #071a3e;
@@ -346,9 +406,8 @@ h2 {
 
 #secondary .widget .widget-cta {display:none}
 
-.home #secondary .widget .widget-cta {display:block}
-
-.s_span_6 {width:45%}
+/*this is a global column width, have to comment it out & use more specific selectors*/
+/*.s_span_6 {width:45%}*/
 
 #footer .footer-left.s_span_6 {
     width: 55%; 
@@ -388,3 +447,68 @@ h2 {
 }
 
 .page-template-page-staff .staff-member {margin-top:20px}
+
+.staff-info p {
+    margin-bottom: 0;
+}
+
+.staff-info a {
+    display: block;
+}
+
+.staff-info button {
+    padding: 0;
+    background-color: transparent;
+    text-transform:uppercase;
+    font-size:.9em;
+    color:#18576e
+}
+
+.xs_span_2 {
+    width: 10%;
+}
+
+
+.page-template-page-staff .staff-member img {
+    margin-bottom: 40px;
+}
+
+.page-template-page-staff .staff-member .bio {margin-bottom:24px}
+
+aside#popular_post_widget-3 h3 {
+    background-image: url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/HA-blogicons-popular.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+aside#categories-3 h3 {
+    background-image: url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/HA-blogicons-categories.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+aside#archives-3 h3 {
+    background-image: url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/HA-blogicons-archive.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blog section#primary, .single-post section#primary {
+    margin-top: 20px;
+}
+
+a.read-more {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .5px;
+    display: block;
+    margin-top: 14px;
+    font-weight: 600;
+}
+
+
+.page-template-default .entry-title {
+    background: #003466; min-height:125px}
+
+.page-template-default .entry-title img {max-height:115px!important; max-width:245px!important}
+
