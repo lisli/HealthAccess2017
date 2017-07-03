@@ -10,6 +10,18 @@
 		}
 	}
 
+	.menu-top-menu-container {
+		ul ul {
+			width: 166px;
+		}
+		// added from custom.css and updated
+		ul li ul li ul {
+			// margin-left: -45px !important; 
+			margin-top: 0!important; 
+			width: 166px
+		}
+	}
+
 	div {
 		float: left;
 		// overflow: hidden;
@@ -80,7 +92,7 @@
 			    font-size: .75em;
 			    font-weight: 600;
 			    text-transform: capitalize;
-			    width: 300px;
+			     width: 240px;
 			    padding-bottom: 6px;
 			    box-shadow: 4px 5px 2px #999;
 			    border: thin solid #c3b8af;

@@ -350,7 +350,8 @@ h2.factsheet {background-image: url(http://healthaccess.flywheelsites.com/wp-con
 
 .su-column {margin-right:2%!important}
 
-.access ul ul {width:270px}
+/*moved to _nav.scss and edited*/
+/*.access ul ul {width:270px}*/
 
 .access ul li ul li.menu-item-has-children a::after {content: " >>"}
 
@@ -375,7 +376,8 @@ h2.factsheet {background-image: url(http://healthaccess.flywheelsites.com/wp-con
     font-size: 14px;
 }
 
-.access .menu-top-menu-container ul li ul li ul {margin-left:-45px !important; margin-top:0!important; width:200px}
+/*moved to _nav.scss and edited*/
+/*.access .menu-top-menu-container ul li ul li ul {margin-left:-45px !important; margin-top:0!important; width:200px}*/
 
 .access .menu-top-menu-container ul li ul li ul li {
     padding: 0;
