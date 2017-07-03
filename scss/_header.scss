@@ -20,17 +20,60 @@
 }
 
 #site-header {
+	background-color: $gray;
 	border-bottom: 4px solid $orange;
 	margin-bottom: 45px;
 	position: relative;
 	z-index: 250;
 	.logo {
-		
+		display: inline-block;
 	}
 	img {
 		height: auto;
 		@media (min-width: $s) {
 			margin-bottom: 13px;
 		}
+	}
+}
+
+header {
+	.widget_search {
+		display: inline-block;
+		width: auto;
+    	// float: right;
+    	// margin-left: 10px;
+
+    	form {
+    		margin: 0 0 10px;
+    		position: relative;
+    	}
+
+    	input[type=text] {
+    		border: 1px solid $blue;
+    	}
+
+    	button[type=submit] {
+    		background: $blue;
+    		color: white;
+    		position: absolute;
+    		right: 0;
+		    top: 1px;
+    		padding: 6px 7px 9px 7px;;
+    	}
+
+    	#s {
+    		width: 100%;
+    	}
+	}
+}
+
+.header-inner {
+	width: 100%;
+	padding: 0 15px;
+
+	@media (min-width: $m) {
+		width: 92%; 
+		margin: 0 auto;
+		padding-top: 16px;
 	}
 }

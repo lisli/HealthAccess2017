@@ -44,24 +44,30 @@
             <?php dynamic_sidebar('top-bar'); ?>
         </div>
     </div>
-	<div id="page">
-		<header id="site-header" role="banner" class="row"> 
+	
+	<header id="site-header" role="banner" class="row"> 
+        <div class="header-inner">
             <nav class="access top-nav-bar">   
                 <?php wp_nav_menu( array( 'theme_location' => 'top-nav' ) ); ?>
             </nav>     
-            <?php wp_nav_menu( array( 'theme_location' => 'donate-link' ) ); ?>
             
-			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
-				<img class="xs_span_12 s_span_6" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
-			</a>
-            
+            <div class="row">
+        		<a href="<?php echo esc_url( home_url() ); ?>/" class="logo xs_span_12 s_span_6 col">
+        			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
+        		</a>
+                <div class="search-donate xs_span_12 s_span_6 col">
+                    <?php dynamic_sidebar('top-nav-search'); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'donate-link' ) ); ?>
+                </div>
+            </div>
 
-			<div class="mainnavwrap">
+    		<div class="mainnavwrap">
                 <nav class="access" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?><?php dynamic_sidebar('top-nav-search'); ?>   
+                <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>   
                 </nav>
             </div><!-- #access -->
-		</header><!-- #branding -->
+        </div>
+	</header><!-- #branding -->
 
-
-		<div id="main" class="row">
+    <div id="page">
+        <div id="main" class="row">

@@ -60,7 +60,7 @@ get_header(); ?>
 			<!--<h3><?php echo $featHead1; ?></h3>-->
 			<img class="s_span_5" src="<?php echo $featImg1; ?>" alt="<?php echo $featTitle1; ?>"/>
 			<div class="text col s_span_7">
-				<h3><!--<a href="<?php echo $featLink1; ?>">--><?php echo $featTitle1; ?></a></h3>
+				<h3><a href="<?php echo $featLink1; ?>"><?php echo $featTitle1; ?></a></h3>
 				<!--<p><?php echo $featEx1; ?></p>
 				<a class="read-more" href="<?php echo $featLink1; ?>">Read More</a>-->
        				<?php echo $featExtra1; ?>
@@ -71,9 +71,9 @@ get_header(); ?>
 			<!--<h3><?php echo $featHead2; ?></h3>-->
 			<img class="s_span_5" src="<?php echo $featImg2; ?>" alt="<?php echo $featTitle2; ?>"/>
 			<div class="text col s_span_7">
-				<h3><!--<a href="<?php echo $featLink2; ?>">--><?php echo $featTitle2; ?></h3>
+				<h3><a href="<?php echo $featLink2; ?>"><?php echo $featTitle2; ?></a></h3>
 				<!--<?php echo $featEx2; ?>
-				<a class="read-more" href="<?php echo $featLink2; ?>">Read More</a>-->
+				<a href="<?php echo $featLink2; ?>">Read More</a>-->
 				<?php echo $featExtra2; ?>
 			</div><div style="clear:both"></div> 
 			</div>
@@ -82,7 +82,7 @@ get_header(); ?>
 			<!--<h3><?php echo $featHead3; ?></h3>-->
 			<img class="s_span_5" src="<?php echo $featImg3; ?>" alt="<?php echo $featTitle3; ?>"/>
 			<div class="text col s_span_7">
-				<h3><!--<a href="<?php echo $featLink3; ?>">--><?php echo $featTitle3; ?></h3>
+				<h3><a href="<?php echo $featLink3; ?>"><?php echo $featTitle3; ?></a></h3>
 				<!--<?php echo $featEx3; ?>
 				<a class="read-more" href="<?php echo $featLink3; ?>">Read More</a>-->
    				<?php echo $featExtra3; ?>

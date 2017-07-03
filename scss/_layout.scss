@@ -12,6 +12,12 @@ body {
 		margin: 16px auto 0;
 	}
 }
+
+.header-inner,
+#page {
+	max-width: 1180px;
+}
+
 #main,
 #footer,
 .row {

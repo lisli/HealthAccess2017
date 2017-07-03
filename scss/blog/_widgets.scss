@@ -91,36 +91,6 @@
 	}
 }
 
-header {
-	.widget_search {
-		width: auto;
-    	float: right;
-    	margin-left: 10px;
-
-    	form {
-    		margin: 0 0 10px;
-    		position: relative;
-    	}
-
-    	input[type=text] {
-    		border: 1px solid $blue;
-    	}
-
-    	button[type=submit] {
-    		background: $blue;
-    		color: white;
-    		position: absolute;
-    		right: 0;
-		    top: 1px;
-    		padding: 6px 7px 9px 7px;;
-    	}
-
-    	#s {
-    		width: 100%;
-    	}
-	}
-}
-
 .page .widget_sp_image {
 	display: none;
 	@media (min-width: $m) {
