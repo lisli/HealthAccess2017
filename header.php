@@ -51,7 +51,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'top-nav' ) ); ?>
             </nav>     
             
-            <div class="row">
+            <div class="logo-search-donate">
         		<a href="<?php echo esc_url( home_url() ); ?>/" class="logo xs_span_12 s_span_6 col">
         			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
         		</a>
