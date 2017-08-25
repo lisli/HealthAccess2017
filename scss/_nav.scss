@@ -3,7 +3,9 @@
 	margin: 10px 0 0;
 
 	&.top-nav-bar {
-		float: right;
+		@media (min-width: $mobile-menu) {
+			float: right;
+		}
 		// width: 100%;
 		.menu-top-menu-container {
 			float: none;
@@ -139,7 +141,9 @@
 		
 		ul {
 			display: inherit;
-			float: right;
+			@media (min-width: $mobile-menu) {
+				float: right;
+			}
 
 			li {
 				font-size: 1em;
@@ -216,6 +220,7 @@
 .logo-search-donate {
 	@include clearfix;
 }
+
 .search-donate {
 	float: right;
 	margin-top: 10px;
