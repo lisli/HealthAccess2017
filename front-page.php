@@ -25,11 +25,10 @@ get_header(); ?>
 	</article><!-- #post-<?php the_ID(); ?> -->
 
 	<?php 	
-		$quote = get_field('quote');
-		$quoteName = get_field('name');
-		$rightHeader = get_field('header_right');
-		$rightContent = get_field('content_right');
-		$submitLink = get_field('submit_link');
+		$shareStoryImg = get_field('share_your_story_image');
+		$shareStoryTRText = get_field('share_your_story_top_right_text');
+		$shareStoryBRText = get_field('share_your_story_bottom_right_text');
+		$shareStoryLink = get_field('share_your_story_link');
 
 		$featHead1 = get_field('featured_item_1_header');
 		$featTitle1 = get_field('featured_item_1_title');
@@ -43,7 +42,7 @@ get_header(); ?>
 		$featImg2 = get_field('featured_item_2_image');
 		$featEx2 = get_field('featured_item_2_excerpt');
 		$featLink2 = get_field('featured_item_2_link');
-                $featExtra2 = get_field('featured_item_2_extra');
+        $featExtra2 = get_field('featured_item_2_extra');
 
 		$featHead3 = get_field('featured_item_3_header');
 		$featTitle3 = get_field('featured_item_3_title');
@@ -92,21 +91,15 @@ get_header(); ?>
 <div style="clear:both"></div> 
 	</div>
 
-	<!-- <article class="testimonial">
-		<div class="quote s_span_7">
-			<div class="quote-inner">
-				<?php echo $quote; ?>
-				<?php echo $quoteName; ?>
-			</div>
-		</div>
-		<div class="submit-yours col s_span_5">
-			<h3><?php echo $rightHeader; ?></h3>
-			<?php echo $rightContent; ?>
-			<a href="<?php echo $link; ?>">Submit Your Story</a>
-		</div>
-	</article>-->
+	 <article class="share-story row">
+		<img class="col s_span_6" src="<?php echo $shareStoryImg; ?>" alt="Share Your Story"/>
 
-<div><a href="http://healthaccess.flywheelsites.com/get-involved/submit-your-story/"><img src="http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-submit.png"></a></div>
+		<div class="submit-yours col s_span_6">
+			<div class="top"><?php echo $shareStoryTRText; ?></div>
+			<div class="bottom"><?php echo $shareStoryBRText; ?></div>
+			<a class="button" href="<?php echo $shareStoryLink; ?>">Share Your Story</a>
+		</div>
+	</article>
 
 
 
