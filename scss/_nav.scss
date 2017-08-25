@@ -22,6 +22,10 @@
 		}
 		ul ul {
 			width: 166px;
+			display: none;
+			@media (min-width: $mobile-menu) {
+				display: inherit;
+			}
 		}
 		// added from custom.css and updated
 		ul li ul li ul {
