@@ -114,16 +114,18 @@ margin-top:6px;
 
 .access ul#menu-main li ul li a {text-align: left;     border-bottom: thin solid #cec5bd; padding-bottom:5px}
 
-
-.menu-main-container {
+/*this is being overwritten later on -- moving later 
+reference to _nav.scss and editing it*/
+/*.menu-main-container {
     margin-top: -40px;
-}
+}*/
 
-#menu-main li {
+/*moving to _nav.scss and editing*/
+/*#menu-main li {
     font-weight: 600;
     padding: 0px 0px 0px 42px;
     font-size: 1.15em;
-}
+}*/
 
 #menu-main li.nolink, #menu-main li.nolink a {padding:0; color:#18576d}
 
@@ -261,10 +263,11 @@ button a {color:#fff}
 
 #site-header {background:#e8e7e4;}
 
-.menu-main-container{
+/*moving to _nav.scss and editing*/
+/*.menu-main-container{
     background:#e8e7e4;
     margin-top: -5px;
-}
+}*/
 
 #secondary .widget-title {
     text-transform: capitalize;
@@ -374,9 +377,11 @@ h2.factsheet {background-image: url(http://healthaccess.flywheelsites.com/wp-con
 /*moved to _nav.scss and edited*/
 /*.access ul ul {width:270px}*/
 
-.access ul li ul li.menu-item-has-children a::after {content: " >>"}
+/*moved to _nav.scss and edited*/
+/*.access ul li ul li.menu-item-has-children a::after {content: " >>"}*/
 
-.access ul li ul li ul {box-shadow: 4px 5px 2px #999; margin-top:-18px!important; margin-left:-20px!important; border: thin solid #e8e2d9;}
+/*moved to _nav.scss and edited*/
+/*.access ul li ul li ul {box-shadow: 4px 5px 2px #999; margin-top:-18px!important; margin-left:-20px!important; border: thin solid #e8e2d9;}*/
 
 .access ul li ul li.menu-item-has-children li a::after {display:none}
 

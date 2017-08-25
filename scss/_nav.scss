@@ -1,6 +1,9 @@
 .access {
 	// @include clearfix;
-	margin: 10px 0 0;
+	font-size: 18px;
+	@media (min-width: $mobile-menu) {
+		margin: 10px 0 0;
+	}
 
 	&.top-nav-bar {
 		@media (min-width: $mobile-menu) {
@@ -130,8 +133,15 @@
 				    // width: 247px;
 				    border: none;
 
+				    @media (max-width: $mobile-menu) {
+						box-shadow: none;
+						margin-top: 0;
+						margin-left: 0;
+					}
+
 					li {
 						margin-top: 14px;
+						
 					}
 				}
 			}
@@ -160,7 +170,23 @@
 }
 
 .mainnavwrap {
-	@include clearfix;
+	@include clearfix; 
+
+	ul li a {
+		text-align: left;
+	}
+}
+
+.access ul li ul li ul {
+	box-shadow: none;
+	margin-top: 0;
+	margin-left: 0;
+	@media (min-width: $mobile-menu) {
+		box-shadow: 4px 5px 2px #999; 
+		margin-top:-18px; 
+		margin-left:-20px; 
+		border: thin solid #e8e2d9;
+	}
 }
 
 .menu-toggle {
@@ -174,11 +200,16 @@
 	}
 }
 
+//from samantha's custom.css, cleaned and edited
 .menu-main-container {
 	display: none;
+	position: absolute;
+	background:#e8e7e4;
+	margin-top: 3px;
 
 	@media (min-width: $mobile-menu) {
 		display: inherit;
+		margin-top: -5px;
 	}
 }
 
@@ -221,6 +252,20 @@
 	    	text-transform: uppercase;
 	    }
 	 }
+}
+
+// copied and edited from custom.css
+#menu-main li {
+    font-weight: 600;
+    padding: 0px 0px 0px 42px;
+    font-size: 18px;
+}
+
+// copied and edited from custom.css
+.access ul li ul li.menu-item-has-children a::after {
+	@media(min-width: $mobile-menu) {
+		content: " >>";
+	}
 }
 
 .logo-search-donate {
