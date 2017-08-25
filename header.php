@@ -63,7 +63,8 @@
 
     		<div class="mainnavwrap">
                 <nav class="access" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>   
+                    <button class="menu-toggle"><span class="fa fa-bars"></span>&nbsp; Menu</button>
+                    <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>   
                 </nav>
             </div><!-- #access -->
         </div>

@@ -11,6 +11,13 @@
 	}
 
 	.menu-top-menu-container {
+
+		ul {
+			display: none;
+			@media (max-width: $mobile-menu) {
+				display: inherit;
+			}
+		}
 		ul ul {
 			width: 166px;
 		}
@@ -23,10 +30,12 @@
 	}
 
 	div {
-		float: left;
-		// overflow: hidden;
-		position: relative;
-		width: auto;
+		@media (min-width: $mobile-menu) {
+			float: left;
+			// overflow: hidden;
+			position: relative;
+			width: auto;
+		}
 	}
 	//first level nav
 	ul {
@@ -140,6 +149,29 @@
 	
 }
 
+.mainnavwrap {
+	@include clearfix;
+}
+
+.menu-toggle {
+	background-color: transparent;
+	color: $blue;
+	font-family: $main;
+	text-transform: uppercase;
+
+	@media (min-width: $s) {
+		display: none;
+	}
+}
+
+.menu-main-container {
+	display: none;
+
+	@media (min-width: $mobile-menu) {
+		display: inherit;
+	}
+}
+
 #menu-main {
 	// from samantha's custom.css
 	li ul li {
@@ -181,6 +213,9 @@
 	 }
 }
 
+.logo-search-donate {
+	@include clearfix;
+}
 .search-donate {
 	float: right;
 	margin-top: 10px;

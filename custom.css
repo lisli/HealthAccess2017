@@ -18,7 +18,7 @@ div#main #primary li {list-style-type:disc}
     width: 75%;
 }
 
-h1, .entry-title {font-weight:600; color:#18576d; font-size:2.25em}
+h1, .entry-title {font-weight:600; color:#18576d; font-size:2em}
 
 h2, h3, h5, .entry-title a {font-weight:600;}
 
@@ -276,11 +276,17 @@ button a {color:#fff}
 }
 .wpsisac-slick-slider.design-1 .slick-arrow {
     display: none!important;}
-div#main #primary li {
+
+
+.home div#main #primary li {
     font-size: 1.1em;
     }
 
-.access ul ul {border-left: thin solid #c3b8af;}
+.access ul ul {border-left: thin solid #c3b8af; width:280px}
+
+.access .menu-top-menu-container ul ul {
+    width: 213px;
+}
 
  #menu-main li ul li {padding-left: 14px;
     padding-right: 10px;}
@@ -523,9 +529,28 @@ a.read-more {
     font-weight: 600;
 }
 
+.footer-right {
+    width: 35%;
+    margin-top: 75px;
+}
+
+#footer .footer-left.s_span_6 {
+    width: 65%;
+}
+
+
 
 .page-template-default .entry-title {
-    background: #003466; min-height:125px}
+    background: #003466; height:114px; max-height:114px}
 
 .page-template-default .entry-title img {max-height:115px!important; max-width:245px!important}
+
+@media (min-width: 740px)
+{
+.footer-right { 
+    width: 35%;
+    margin-top: 50px;
+} }
+
+
 

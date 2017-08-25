@@ -17,6 +17,10 @@ jQuery(document).ready(function(jQuery){
 		// jQuery(this).children("i").toggleClass("fa-plus");
 		// jQuery(this).children("i").toggleClass("fa-minus");
   	});
+
+  	jQuery(document).on("click", ".mainnavwrap .menu-toggle", function(event) {
+		jQuery(".menu-main-container").toggle("slow");
+  	});
 });
 
 /**
