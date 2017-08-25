@@ -14,11 +14,11 @@
 
 	.menu-top-menu-container {
 
-		ul {
-			display: none;
-			@media (max-width: $mobile-menu) {
-				display: inherit;
-			}
+		.sub-menu {
+			// display: none;
+			// @media (min-width: $mobile-menu) {
+			// 	display: inherit;
+			// }
 		}
 		ul ul {
 			width: 166px;
@@ -135,6 +135,8 @@
 	}
 
 	.menu-top-menu-container {
+		@include clearfix;
+
 		@media (min-width: $m) {
 			min-width: 520px;
 		}
@@ -219,6 +221,7 @@
 
 .logo-search-donate {
 	@include clearfix;
+	position: static;
 }
 
 .search-donate {
