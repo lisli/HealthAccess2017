@@ -92,12 +92,11 @@ get_header(); ?>
 	</div>
 
 	 <article class="share-story row">
-		<img class="col s_span_6" src="<?php echo $shareStoryImg; ?>" alt="Share Your Story"/>
+		<a href="<?php echo $shareStoryLink; ?>"><img class="col s_span_6" src="<?php echo $shareStoryImg; ?>" alt="Share Your Story"/></a>
 
 		<div class="submit-yours col s_span_6">
 			<div class="top"><?php echo $shareStoryTRText; ?></div>
-			<div class="bottom"><?php echo $shareStoryBRText; ?></div>
-			<a class="button" href="<?php echo $shareStoryLink; ?>">Share Your Story</a>
+			<div class="bottom"><a href="<?php echo $shareStoryLink; ?>"><?php echo $shareStoryBRText; ?></a></div>
 		</div>
 	</article>
 

@@ -12,6 +12,7 @@
 		</h1>
 		<span class="entry-date"><?php echo get_the_date(); ?></span>
 	</header><!-- .entry-header -->
+<div style="clear:both"></div>
 
 	<div class="entry-content">
 		<?php if ( is_home () || is_category() || is_archive() ) {

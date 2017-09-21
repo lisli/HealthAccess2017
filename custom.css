@@ -5,32 +5,41 @@
     background-color: #1a3362;
 }
 
-body, input, textarea {font-size:16px}
+body, input, textarea {font-size:18px; color:#000}
 
 div#main p, div#main li {
-    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif; color:#000
 }
 
-div#main #primary li {list-style-type:disc}
+div#main #primary li {list-style-type:disc; margin-bottom:10px}
+
+div#main #primary li li {list-style-type:circle; margin-bottom:4px}
 
 .home .featured-items .text {
     font-size:1em;
     width: 75%;
-}
+}  
 
-h1, .entry-title {font-weight:600; color:#18576d; font-size:2em}
+h1, .entry-title {font-weight:700; color:#18576d; font-size:1.55em; letter-spacing:1px}
 
-h2, h3, h5, .entry-title a {font-weight:600;}
+h2, h3, h5, .entry-title a {font-weight:700;}
 
-h2 {color:#224274; margin-bottom:15px}
+h2 {color: #ef6030;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    line-height: 1.3em;}
+
 
 h4 {
-    color: #18576d;
-    font-weight: 600;
-    font-size: 1.35em;
-   margin-bottom: 12px;
-    line-height: 25px;
+    color: #003466;
+    font-weight: 700;
+    font-size: 1em;
+   margin: 8px 0 12px;
 }
+
+hr {
+    background-color: #e8e2d9;
+    margin-top: 20px;}
 
 #site-header {margin-bottom:25px}
 
@@ -50,7 +59,7 @@ h4 {
 /*.menu-donate-container {top:-50px}*/
 
 .access ul#menu-top-menu li a {
-    font-weight: 500;
+    font-weight: 600;
     padding-right: 15px;
     padding-left: 10px;
     font-size: .9em;
@@ -78,7 +87,7 @@ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", G
     padding: 45px 45px 10px 100px;
 }
 
-.home .testimonial .submit-yours h3 {font-weight: 600;
+.home .testimonial .submit-yours h3 {font-weight: 700;
     font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 3.75px;
@@ -145,18 +154,24 @@ ul.submenu {box-shadow: 10px 10px 5px #cec5bd;}
     background-repeat: no-repeat;
     background-position: left;}
 
+.su-column-size-1-3 {height: 170px!important;}
 
-#secondary .widget-title {  text-transform: capitalize;
-    font-weight: 600; padding:15px 5px 15px 85px; background-color: #224176; color:#fff}
+a.donatebutton {
+    background: #466ba4;
+    padding: 6px 13px;
+    color: #fff;
+    letter-spacing: 2px;
+} 
 
-#black-studio-tinymce-4 a {font-size:.9em; letter-spacing:.5px; margin-top: -10px;
-    display: block; font-weight:600}
+
+#secondary .widget-title {text-transform: capitalize;
+    font-weight: 700; padding:15px 5px 15px 85px; background-color: #224176; color:#fff}
 
 
 #secondary .widget_recent_entries li {margin-bottom: 22px;
     line-height: 24px;}
 
-span.post-date, .submit-yours a, .entry-date {
+span.post-date, .entry-date {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
@@ -247,7 +262,7 @@ button a {color:#fff}
     margin-bottom: 10px;
 }
 
-.featwrap h3 {font-size:24px; margin-top:-6px}
+.featwrap h3 {font-size:21px; margin-top:-6px}
 
 
 /*header .widget_search {float:right; margin-right:-130px}*/
@@ -256,7 +271,7 @@ button a {color:#fff}
     padding: 0px 7px 0px 7px;
 }
 
-.home .featured-items .text h3 {font-size:1.5em} 
+.home .featured-items .text h3 {font-size:1.4em} 
 
 .access ul li a {
     padding: 2px;}
@@ -271,19 +286,17 @@ button a {color:#fff}
 
 #secondary .widget-title {
     text-transform: capitalize;
-    font-weight: 600;
-    padding: 11px 3px 11px 85px;
+    font-weight: 700;
+    padding: 10px 3px 10px 85px;
     background-color: #224176;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.15em;
+letter-spacing:1px
 }
 .wpsisac-slick-slider.design-1 .slick-arrow {
     display: none!important;}
 
 
-.home div#main #primary li {
-    font-size: 1.1em;
-    }
 
 .access ul ul {border-left: thin solid #c3b8af; width:280px}
 
@@ -306,9 +319,16 @@ button a {color:#fff}
 
 #advanced_sidebar_menu-2 .widget-cta {display:none}
 
-.page-template-default h1 {background:#18576d; color:#fff; padding:20px; line-height: 37px;}
+.page-template-default h1, 
+.page-template-page-early-legislation h1 {
+    background:#18576d; 
+    color:#fff; 
+    padding:20px; 
+    line-height: 37px;
+}
 
-.page-template-default h1 {
+.page-template-default h1,
+.page-template-page-early-legislation h1 {
     background: #18576d;
     color: #fff;
     padding: 20px;
@@ -335,9 +355,9 @@ button a {color:#fff}
 
 #footer {border-top: 3px solid #f69838;}
 
-ul.parent-sidebar-menu li a {font-size:24px; color:#18576d; padding-left:14px; text-transform:Capitalize; font-weight:600 }
+ul.parent-sidebar-menu li a {font-size:21px; color:#077b82; padding-left:14px; text-transform:Capitalize; font-weight:700 }    
 
-ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; font-weight:normal; padding-left:0; text-transform:none;}
+ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; padding-left:0; font-weight:normal; text-transform:none;}
  ul.parent-sidebar-menu {background-color:#f3f2f0} 
 
 #secondary .widget ul li li {
@@ -349,26 +369,37 @@ ul.parent-sidebar-menu li li a {font-size:16px; color: #466ba4; font-weight:norm
 
 .home .entry-content {padding-top:10px}
 
-.entry-content {margin-top:10px}
+
 
 p.large, h3 {
-    font-size: 20px;
+    font-size: 1.15em;
     font-family: "Gill Sans", "Gill Sans MT", sans-serif!important;
-    color: #224176;
+    color: #077b82;
+    margin:5px 0 10px
 }
 
 aside#black-studio-tinymce-2 h3 {
     color: #fff;
 }
 
-h2.factsheet {background-image: url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-factsheet.png);
-    height: 66px;
+h2 sup {font-size:18px}
+
+.factsheet {
+    background-image: url(http://healthaccess.flywheelsites.com/wp-content/uploads/2017/06/ha-factsheet.png);
+    height: 45px;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-left: 85px;
-    margin-bottom: 25px;
-    line-height: 28px;
-    padding-top: 6px;} 
+    padding-left: 63px;
+    margin-bottom: 32px;
+    line-height: 24px;
+    padding-top: 0;
+    font-size: 18px;
+    color:#003466
+}
+
+#main strong {color:#003466}
+
+#search-2 input {min-height: 36px;}
 
 .home .featured-items .text h3 {margin-top:0}
 
@@ -410,20 +441,8 @@ h2.factsheet {background-image: url(http://healthaccess.flywheelsites.com/wp-con
 }
 
 
-
-h4 {
-    color: #071a3e;
-    font-weight: 600;
-    margin-bottom:3px; font-size:1.25em
-}
-
 .su-column-inner.su-clearfix {
     height: 130px;
-}
-
-h2 {
-    color: #ef6030;
-    margin-bottom: 15px;
 }
 
 .widget_popular_post_widget li {
@@ -434,8 +453,6 @@ h2 {
 
 #secondary .widget .widget-cta {display:none}
 
-/*this is a global column width, have to comment it out & use more specific selectors*/
-/*.s_span_6 {width:45%}*/
 
 #footer .footer-left.s_span_6 {
     width: 55%; 
@@ -446,7 +463,8 @@ h2 {
 .home .featured-items .text h3 {margin-bottom:.5em}
 
 
-.page-template-default .entry-title {padding:18px 24px}
+.page-template-default .entry-title, 
+.page-template-page-early-legislation .entry-title {padding:18px 24px}
 
 .blog img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     width: 200px;
@@ -489,7 +507,8 @@ h2 {
     background-color: transparent;
     text-transform:uppercase;
     font-size:.9em;
-    color:#18576e
+    color:#18576e;
+    margin-bottom:16px
 }
 
 .xs_span_2 {
@@ -545,10 +564,36 @@ a.read-more {
 
 
 
-.page-template-default .entry-title {
+.page-template-default .entry-title,
+.page-template-page-early-legislation .entry-title {
     background: #003466; height:114px; max-height:114px}
 
-.page-template-default .entry-title img {max-height:115px!important; max-width:245px!important}
+.page-template-default .entry-title img,
+.page-template-page-early-legislation .entry-title img {max-height:115px!important; max-width:245px!important}
+
+.share-story img.col.s_span_6 {
+    width: 40%;
+}
+
+.submit-yours.col.s_span_6 {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.staff-info h4 {
+    margin: 0;
+}
+
+aside#nav_menu-2 {
+    background-color: #f3f2f0;
+    padding: 15px;
+}
+
+#secondary #nav_menu-2 .widget-title {padding:0; color:#077b82; background-color:transparent}
+
+#secondary #nav_menu-2 li {border-bottom: thin solid #e8e2d9; padding:4px 0
+}
+
 
 @media (min-width: 740px)
 {

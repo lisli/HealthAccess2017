@@ -73,5 +73,7 @@ get_header(); ?>
 
 </section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<div id="secondary" class="col s_span_4" role="complementary">
+	<?php dynamic_sidebar('newsroom-publications-sidebar'); ?>
+</div>
 <?php get_footer(); ?>
