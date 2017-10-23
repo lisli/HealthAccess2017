@@ -13,7 +13,12 @@
 	</header><!-- .entry-header -->
 <div style="clear:both"></div>
 	<div class="entry-content">
-		<?php the_content(); ?>
+
+		<?php 
+		if( has_post_thumbnail() ):
+			    echo get_the_post_thumbnail();
+			endif; 
+		the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'health-access2017' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

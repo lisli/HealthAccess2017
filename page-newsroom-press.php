@@ -1,6 +1,6 @@
 <?php
 /**
- * Newsroom & Press Template
+ * Template Name: Newsroom & Press Template
  *
  * 
  *

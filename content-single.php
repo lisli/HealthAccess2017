@@ -14,8 +14,15 @@
 
 	<div class="entry-content">
 		<?php if ( is_home () || is_category() || is_archive() ) {
+			if( has_post_thumbnail() ):
+			    echo get_the_post_thumbnail();
+			endif; 
 		    the_excerpt('');
+
 		} else {
+			if( has_post_thumbnail() ):
+			    echo get_the_post_thumbnail();
+			endif; 
 			the_content(); 
 		} ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'health-access2017' ) . '</span>', 'after' => '</div>' ) ); ?>
