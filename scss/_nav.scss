@@ -6,8 +6,10 @@
 	}
 
 	&.top-nav-bar {
+		display: none;
 		@media (min-width: $mobile-menu) {
 			float: right;
+			display: block;
 		}
 		// width: 100%;
 		.menu-top-menu-container {
@@ -200,6 +202,12 @@
 	}
 }
 
+// new mobile menu
+
+.menu-mobile-menu-container {
+	display: none;
+}
+
 //from samantha's custom.css, cleaned and edited
 .menu-main-container {
 	display: none;
@@ -213,7 +221,8 @@
 	}
 }
 
-#menu-main {
+#menu-main,
+#menu-mobile-menu {
 	// from samantha's custom.css
 	li ul li {
 		text-align: left;
@@ -255,7 +264,8 @@
 }
 
 // copied and edited from custom.css
-#menu-main li {
+#menu-main li,
+#menu-mobile-menu li {
     font-weight: 600;
     padding: 0px 0px 0px 42px;
     font-size: 18px;

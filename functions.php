@@ -34,7 +34,8 @@ function health_access2017_setup() {
 	    array(
 	      'main-nav' => __( 'Main Menu' ),
 	      'top-nav' => __( 'Top Menu' ),
-	      'donate-link' => __( 'Donate Link' ) )
+	      'donate-link' => __( 'Donate Link' ),
+	      'mobile-nav' => __( 'Mobile Menu' ), )
   	);
   	
 	// Add featured image support

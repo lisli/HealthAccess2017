@@ -19,7 +19,7 @@ jQuery(document).ready(function(jQuery){
   	});
 
   	jQuery(document).on("click", ".mainnavwrap .menu-toggle", function(event) {
-		jQuery(".menu-main-container").toggle("slow");
+		jQuery(".menu-mobile-menu-container").toggle("slow");
   	});
 });
 

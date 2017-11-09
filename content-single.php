@@ -9,7 +9,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<span class="entry-author">By <?php the_author(); ?></span>
+		<span class="entry-author">By 
+			<?php if ( function_exists( 'coauthors_posts_links' ) ) {
+			    coauthors();
+			} else {
+			    the_author();
+			} ?>
+		</span>
 		<span class="entry-date"><?php echo get_the_date(); ?></span>
 	</header><!-- .entry-header -->
 

@@ -62,9 +62,9 @@
             </div>
 
     		<div class="mainnavwrap">
-                <nav class="access" role="navigation">
-                    <button class="menu-toggle"><span class="fa fa-bars"></span>&nbsp; Menu</button>
+                <nav class="access" role="navigation"><button class="menu-toggle"><span class="fa fa-bars"></span>&nbsp; Menu</button>
                     <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>   
+                    <?php wp_nav_menu( array( 'theme_location' => 'mobile-nav' ) ); ?>   
                 </nav>
             </div><!-- #access -->
         </div>

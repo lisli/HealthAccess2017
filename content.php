@@ -10,7 +10,13 @@
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'health-access2017' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
-		<span class="entry-author">By <?php the_author(); ?></span>
+		<span class="entry-author">By 
+			<?php if ( function_exists( 'coauthors_posts_links' ) ) {
+			    coauthors();
+			} else {
+			    the_author();
+			} ?>
+		</span>
 		<span class="entry-date"><?php echo get_the_date(); ?></span>
 	</header><!-- .entry-header -->
 <div style="clear:both"></div>
